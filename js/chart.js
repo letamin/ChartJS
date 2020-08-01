@@ -59,11 +59,7 @@ async function getData() {
     const yAxisTemperatureNorth = [];
     const yAxisTemperatureSouth = [];
 
-<<<<<<< HEAD
     await fetch('data/data.csv') //Data is downloaded from: https://data.giss.nasa.gov/gistemp/
-=======
-    await fetch('data.csv') //Data is downloaded from: https://data.giss.nasa.gov/gistemp/
->>>>>>> 619615df7fd00a0448b051c65ef031193ec58f9c
         .then(res => res.text())
         .then(res => {
             const tableData = res.split("\n").slice(1);
